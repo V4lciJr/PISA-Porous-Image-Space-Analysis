@@ -1,0 +1,3 @@
+
+class GrayLevelsError(Exception):
+    pass

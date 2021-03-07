@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form_export</class>
+ <widget class="QWidget" name="Form_export">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>730</width>
+    <height>566</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>730</width>
+    <height>566</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Export</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/ppd_enhanced_colors_supreme-removebg-preview.png</normaloff>Icons/ppd_enhanced_colors_supreme-removebg-preview.png</iconset>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_path_save">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>36</y>
+     <width>566</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_export">
+   <property name="geometry">
+    <rect>
+     <x>611</x>
+     <y>28</y>
+     <width>47</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	border:transparent;
+	
+}
+
+QPushButton:hover{
+	
+	background-color: rgb(226, 226, 226);
+}
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/593eab2b18a32.png</normaloff>Icons/593eab2b18a32.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>90</y>
+     <width>663</width>
+     <height>200</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QCheckBox" name="checkBox_ppd_export">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>11</y>
+      <width>83</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="text">
+     <string> PPD</string>
+    </property>
+    <property name="shortcut">
+     <string/>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_ep_export">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>99</y>
+      <width>70</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Verdana</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>EP</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_ep">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>128</y>
+      <width>616</width>
+      <height>56</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="radioButton_all_eff_export">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>13</y>
+       <width>146</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>All Effectives</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_effec_export">
+     <property name="geometry">
+      <rect>
+       <x>362</x>
+       <y>13</y>
+       <width>110</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Effective</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_eff_export">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>479</x>
+       <y>13</y>
+       <width>55</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Verdana</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>1</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_ppd">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>16</x>
+      <y>47</y>
+      <width>644</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QRadioButton" name="radioButton_all">
+     <property name="geometry">
+      <rect>
+       <x>3</x>
+       <y>15</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>All</string>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_all_directions">
+     <property name="geometry">
+      <rect>
+       <x>103</x>
+       <y>15</y>
+       <width>140</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>All Directions</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_horizontal">
+     <property name="geometry">
+      <rect>
+       <x>262</x>
+       <y>15</y>
+       <width>102</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Horizontal</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_vertical">
+     <property name="geometry">
+      <rect>
+       <x>409</x>
+       <y>15</y>
+       <width>82</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Vertical</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_diagonal">
+     <property name="geometry">
+      <rect>
+       <x>518</x>
+       <y>15</y>
+       <width>121</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Diagonal</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label_total_effect">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>106</y>
+      <width>307</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(0, 170, 0);
+font: 11pt &quot;Verdana&quot;;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>310</y>
+     <width>665</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Image Type</string>
+   </property>
+   <widget class="QRadioButton" name="radioButton_tiff_export">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>23</y>
+      <width>82</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.tiff</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_jpg_export">
+    <property name="geometry">
+     <rect>
+      <x>196</x>
+      <y>23</y>
+      <width>82</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.jpg</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_png_export">
+    <property name="geometry">
+     <rect>
+      <x>372</x>
+      <y>23</y>
+      <width>82</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.png</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>390</y>
+     <width>669</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Data File Type</string>
+   </property>
+   <widget class="QRadioButton" name="radioButton_txt_export">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>25</y>
+      <width>82</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.txt</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_xls_export">
+    <property name="geometry">
+     <rect>
+      <x>196</x>
+      <y>25</y>
+      <width>82</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.xlsx</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_csv">
+    <property name="geometry">
+     <rect>
+      <x>372</x>
+      <y>25</y>
+      <width>82</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>.csv</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_ok_export">
+   <property name="geometry">
+    <rect>
+     <x>302</x>
+     <y>490</y>
+     <width>110</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 75 11pt &quot;Verdana&quot;;
+	color: rgb(0, 255, 0);
+	border:1px solid rgb(0, 0, 0, 60);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 60));
+	
+}
+
+QPushButton:hover{
+	
+	color: rgb(0, 0, 0);
+	background-color: rgb(0, 152, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Export</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

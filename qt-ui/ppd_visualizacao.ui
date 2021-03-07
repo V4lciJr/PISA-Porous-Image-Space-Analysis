@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PPD View</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/ppd_enhanced_colors_supreme-removebg-preview.png</normaloff>Icons/ppd_enhanced_colors_supreme-removebg-preview.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox_opt_ppd">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>15</y>
+     <width>662</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+     <underline>false</underline>
+     <strikeout>false</strikeout>
+     <kerning>false</kerning>
+    </font>
+   </property>
+   <property name="title">
+    <string>Options</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>9</number>
+    </property>
+    <property name="leftMargin">
+     <number>50</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>7</number>
+    </property>
+    <item>
+     <widget class="QRadioButton" name="radioButton_all_directions">
+      <property name="styleSheet">
+       <string notr="true">border:transparent;</string>
+      </property>
+      <property name="text">
+       <string>All Directions</string>
+      </property>
+      <property name="checked">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_horizontal">
+      <property name="styleSheet">
+       <string notr="true">border:transparent;</string>
+      </property>
+      <property name="text">
+       <string>Horizontal</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_vertical">
+      <property name="text">
+       <string>Vertical</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_diagonal">
+      <property name="text">
+       <string>Diagonal</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QSlider" name="horizontalSlider_ppd_view">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>586</y>
+     <width>295</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_perspect_ppd">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>84</y>
+     <width>662</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="title">
+    <string>Perspective</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <widget class="QRadioButton" name="radioButton_2d_perspect_ppd">
+    <property name="geometry">
+     <rect>
+      <x>189</x>
+      <y>28</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2D</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_3d_perspect_ppd">
+    <property name="geometry">
+     <rect>
+      <x>405</x>
+      <y>28</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3D</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_ppd_view">
+   <property name="geometry">
+    <rect>
+     <x>233</x>
+     <y>242</y>
+     <width>295</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid rgb(160, 160, 160);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ppd_view_name">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>200</y>
+     <width>443</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>48</x>
+     <y>155</y>
+     <width>662</width>
+     <height>522</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="pushButton_arrow_left">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>420</y>
+      <width>45</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-position:center-low;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	border:2px solid rgb(0, 0, 255);
+}
+
+QPushButton:pressed{
+	background-color: rgb(205, 239, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/left_arrow (1).png</normaloff>Icons/left_arrow (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>42</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_arrow_right">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>496</x>
+      <y>420</y>
+      <width>45</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	background-position:center-low;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color: rgb(255, 255, 255);
+	border:2px solid rgb(0, 0, 255);
+}
+
+QPushButton:pressed{
+	background-color: rgb(205, 239, 255);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>Icons/right_arrow (1).png</normaloff>Icons/right_arrow (1).png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>42</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_ppd_view">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>303</x>
+      <y>378</y>
+      <width>58</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="placeholderText">
+     <string>1</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="btn_ok_ppd_view">
+   <property name="geometry">
+    <rect>
+     <x>353</x>
+     <y>617</y>
+     <width>54</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 75 11pt &quot;Verdana&quot;;
+	color: rgb(0, 255, 0);
+	border:1px solid rgb(0, 0, 0, 60);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(0, 0, 0, 60));
+	
+}
+
+QPushButton:hover{
+	
+	color: rgb(0, 0, 0);
+	background-color: rgb(0, 152, 0);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>groupBox_opt_ppd</zorder>
+  <zorder>horizontalSlider_ppd_view</zorder>
+  <zorder>groupBox_perspect_ppd</zorder>
+  <zorder>label_ppd_view</zorder>
+  <zorder>label_ppd_view_name</zorder>
+  <zorder>btn_ok_ppd_view</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

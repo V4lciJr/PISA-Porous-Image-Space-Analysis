@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="open">
+    <file>Icons/pause.png</file>
+    <file>Icons/pasta_icon-removebg-preview.png</file>
+    <file>Icons/infoImage-removebg-preview~1.png</file>
+    <file>Icons/bina.png</file>
+    <file>Icons/ppd_enhanced_colors_supreme-removebg-preview.png</file>
+    <file>Icons/poros_efetivos-removebg-preview-removebg-preview.png</file>
+    <file>Icons/pngwing.com.png</file>
+    <file>Icons/pngwing-direita.png</file>
+    <file>Icons/play.png</file>
+  </qresource>
+  <qresource prefix="menu_secundario">
+    <file>Icons/pasta_icon-removebg-preview~1.png</file>
+    <file>Icons/novosaveicone~1.png</file>
+    <file>Icons/quit-removebg-preview (1).png</file>
+  </qresource>
+</RCC>

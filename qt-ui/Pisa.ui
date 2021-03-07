@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>850</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>850</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>PISA - Porous Image Space Analysis</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="open_resource.qrc">
+    <normaloff>:/open/Icons/ppd_enhanced_colors_supreme-removebg-preview.png</normaloff>:/open/Icons/ppd_enhanced_colors_supreme-removebg-preview.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(200, 200, 200);
+font: 75 11pt &quot;Verdana&quot;;
+color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_menu_principal">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>110</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(100, 100, 100,200);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_open">
+       <property name="geometry">
+        <rect>
+         <x>13</x>
+         <y>2</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+         <pointsize>11</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="toolTip">
+        <string>Open Folder</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>-2</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	
+	background-image: url(:/open/pasta_icon-removebg-preview.png);
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size-height:80px;
+	background-size-width:80px;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="open_resource.qrc">
+         <normaloff>:/open/Icons/pasta_icon-removebg-preview.png</normaloff>:/open/Icons/pasta_icon-removebg-preview.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_save">
+       <property name="geometry">
+        <rect>
+         <x>115</x>
+         <y>2</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Save Folder&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>-2</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	
+	background-image: url(:/open/novosaveicone.png);
+	background-color:transparent;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size-height:80px;
+	background-size-width:80px;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Icons/export2.png</normaloff>Icons/export2.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>120</width>
+         <height>100</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ppd">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>2</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Predominant Pore Directions</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>-2</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{		
+	background-image: url(:/open/FotoJet.png);
+	background-position:center-up;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="open_resource.qrc">
+         <normaloff>:/open/Icons/ppd_enhanced_colors_supreme-removebg-preview.png</normaloff>:/open/Icons/ppd_enhanced_colors_supreme-removebg-preview.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_ep">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>2</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+       <property name="toolTip">
+        <string>Effective Pores</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>-2</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	
+	background-image: url(:/open/poros_efetivos-removebg-preview-removebg-preview.png);
+	background-position:center-up;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="open_resource.qrc">
+         <normaloff>:/open/Icons/poros_efetivos-removebg-preview-removebg-preview.png</normaloff>:/open/Icons/poros_efetivos-removebg-preview-removebg-preview.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>28</x>
+         <y>77</y>
+         <width>47</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: transparent;
+font: 75 11pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Open</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>122</x>
+         <y>77</y>
+         <width>65</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 75 11pt &quot;Verdana&quot;;
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Export</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>236</x>
+         <y>77</y>
+         <width>47</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+background-color: transparent;
+font: 75 11pt &quot;Verdana&quot;;</string>
+       </property>
+       <property name="text">
+        <string>PPD</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>349</x>
+         <y>77</y>
+         <width>47</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>EP</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_infomation">
+       <property name="geometry">
+        <rect>
+         <x>550</x>
+         <y>2</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string notr="true">Image Information</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>-2</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-image: url(:/open/infoImage-removebg-preview~1.png);
+	background-position:center-up;
+	background-color:transparent;
+	background-repeat:no-repeat;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="open_resource.qrc">
+         <normaloff>:/open/Icons/infoImage-removebg-preview~1.png</normaloff>:/open/Icons/infoImage-removebg-preview~1.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_binary">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>2</y>
+         <width>80</width>
+         <height>80</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Binarize Images</string>
+       </property>
+       <property name="toolTipDuration">
+        <number>-2</number>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-image: url(:/open/bina.png);
+	background-position:center-up;
+	background-color:transparent;
+	background-repeat:no-repeat;
+}
+
+QPushButton:hover{
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="open_resource.qrc">
+         <normaloff>:/open/Icons/bina.png</normaloff>:/open/Icons/bina.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>80</width>
+         <height>80</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>77</y>
+         <width>80</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>Binarize</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>540</x>
+         <y>77</y>
+         <width>100</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 11pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);
+background-color: transparent;</string>
+       </property>
+       <property name="text">
+        <string>I I</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_view">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>35</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(160, 160, 160);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QPushButton" name="pushButton_2d_view">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>0</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+         <pointsize>11</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+	background-color:transparent;
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+	font: 75 11pt &quot;Verdana&quot;;
+	color: rgb(0, 0, 0);
+	background-color:rgb(255, 255, 255);	
+}</string>
+       </property>
+       <property name="text">
+        <string>2D View</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3d_view">
+       <property name="geometry">
+        <rect>
+         <x>82</x>
+         <y>0</y>
+         <width>80</width>
+         <height>40</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>80</width>
+         <height>40</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Verdana</family>
+         <pointsize>11</pointsize>
+         <weight>9</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{	
+	background-color:transparent;
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(0, 0, 0);
+}
+
+QPushButton:hover{
+	font: 75 11pt &quot;Verdana&quot;;
+	background-color:rgb(255, 255, 255);	
+	color: rgb(0, 0, 0);
+}</string>
+       </property>
+       <property name="text">
+        <string>3D View</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_view_main">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(20, 20, 20);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QFrame" name="frame_image">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>21</y>
+         <width>811</width>
+         <height>509</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>200</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>900</width>
+         <height>600</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:rgb(255, 255, 255);
+border: 3px solid rgb(160,160,160);</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="label_name_image">
+        <property name="geometry">
+         <rect>
+          <x>76</x>
+          <y>20</y>
+          <width>680</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>680</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>680</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Verdana</family>
+          <pointsize>11</pointsize>
+          <weight>9</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;
+font: 75 11pt &quot;Verdana&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_image">
+        <property name="geometry">
+         <rect>
+          <x>266</x>
+          <y>50</y>
+          <width>300</width>
+          <height>300</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:2px solid rgb(160, 160, 160);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QFrame" name="frame_setas">
+        <property name="geometry">
+         <rect>
+          <x>266</x>
+          <y>360</y>
+          <width>300</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="spacing">
+          <number>9</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton_seta_esquerda">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-image: url(:/open/pngwing.com.png);
+	background-repeat: no-repeat;
+	background-position:center-low;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color: rgb(200, 200, 200);
+	border:2px solid rgb(35, 35, 35);
+}
+
+QPushButton:pressed{
+	background-color:rgb(150, 150, 150);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="open_resource.qrc">
+             <normaloff>:/open/Icons/pngwing.com.png</normaloff>:/open/Icons/pngwing.com.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>57</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_quantity">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Verdana</family>
+             <pointsize>11</pointsize>
+             <weight>9</weight>
+             <italic>false</italic>
+             <bold>false</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+	border: 2px solid rgb(200, 200, 200);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(35, 35, 35);
+}</string>
+           </property>
+           <property name="inputMask">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>4</number>
+           </property>
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="cursorPosition">
+            <number>0</number>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_seta_direita">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>60</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>60</width>
+             <height>60</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	background-image: url(:/open/pngwing-direita.png);
+	background-repeat: no-repeat;
+	background-position:center-low;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color: rgb(200, 200, 200);
+	border:2px solid rgb(35, 35, 35);
+}
+
+QPushButton:pressed{
+	background-color:rgb(150, 150, 150);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="open_resource.qrc">
+             <normaloff>:/open/Icons/pngwing-direita.png</normaloff>:/open/Icons/pngwing-direita.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>60</width>
+             <height>57</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QFrame" name="frame_playPause">
+        <property name="geometry">
+         <rect>
+          <x>266</x>
+          <y>430</y>
+          <width>300</width>
+          <height>60</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>60</height>
+         </size>
+        </property>
+        <property name="sizeIncrement">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>20</number>
+         </property>
+         <property name="topMargin">
+          <number>4</number>
+         </property>
+         <property name="rightMargin">
+          <number>20</number>
+         </property>
+         <property name="bottomMargin">
+          <number>12</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton_play">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	
+	background-image: url(:/open/play.png);
+	background-repeat: no-repeat;
+	background-position:center-low;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color: rgb(200, 200, 200);
+	border:2px solid rgb(35, 35, 35);
+}
+
+QPushButton:pressed{
+	background-color:rgb(150, 150, 150);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="open_resource.qrc">
+             <normaloff>:/open/Icons/play.png</normaloff>:/open/Icons/play.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>70</width>
+             <height>55</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_pause">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>70</width>
+             <height>55</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>70</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+	
+	background-image: url(:/open/pause.png);
+	background-repeat: no-repeat;
+	background-position:center-low;
+	background-color:transparent;
+}
+
+QPushButton:hover{
+	background-color: rgb(200, 200, 200);
+	border:2px solid rgb(35, 35, 35);
+}
+
+QPushButton:pressed{
+	background-color:rgb(150, 150, 150);
+}</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="icon">
+            <iconset resource="open_resource.qrc">
+             <normaloff>:/open/Icons/pause.png</normaloff>:/open/Icons/pause.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>70</width>
+             <height>57</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="label_quantity_images">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>470</y>
+          <width>274</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border:0px;
+font: 75 11pt &quot;Verdana&quot;;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>505</x>
+         <y>530</y>
+         <width>334</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 8pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>Developers: Edvaldo Melo, Valci Júnior and Waldir Roque</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>850</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSAve"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionPPD"/>
+    <addaction name="actionEP"/>
+    <addaction name="actionPISA_Team"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="open_resource.qrc">
+     <normaloff>:/menu_secundario/Icons/pasta_icon-removebg-preview~1.png</normaloff>:/menu_secundario/Icons/pasta_icon-removebg-preview~1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+   <property name="menuRole">
+    <enum>QAction::TextHeuristicRole</enum>
+   </property>
+   <property name="shortcutVisibleInContextMenu">
+    <bool>true</bool>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="actionSAve">
+   <property name="icon">
+    <iconset resource="open_resource.qrc">
+     <normaloff>:/menu_secundario/Icons/novosaveicone~1.png</normaloff>:/menu_secundario/Icons/novosaveicone~1.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="open_resource.qrc">
+     <normaloff>:/menu_secundario/Icons/quit-removebg-preview (1).png</normaloff>:/menu_secundario/Icons/quit-removebg-preview (1).png</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="actionPPD">
+   <property name="text">
+    <string>PPD</string>
+   </property>
+  </action>
+  <action name="actionEP">
+   <property name="text">
+    <string>EP</string>
+   </property>
+  </action>
+  <action name="actionPISA_Team">
+   <property name="text">
+    <string>PISA Team</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>pushButton_open</tabstop>
+  <tabstop>pushButton_save</tabstop>
+  <tabstop>pushButton_ppd</tabstop>
+  <tabstop>pushButton_ep</tabstop>
+  <tabstop>pushButton_infomation</tabstop>
+  <tabstop>pushButton_binary</tabstop>
+  <tabstop>pushButton_seta_esquerda</tabstop>
+  <tabstop>lineEdit_quantity</tabstop>
+  <tabstop>pushButton_seta_direita</tabstop>
+  <tabstop>pushButton_play</tabstop>
+  <tabstop>pushButton_pause</tabstop>
+  <tabstop>pushButton_2d_view</tabstop>
+  <tabstop>pushButton_3d_view</tabstop>
+ </tabstops>
+ <resources>
+  <include location="open_resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
