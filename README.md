@@ -1,4 +1,4 @@
 # PISA-Porous-Image-Space-Analysis 
-O PISA é um protótipo de software para análises em imagens porosas, desenvolvido em python 3.8.
-Suas telas foram desenvolvidas utilizando o QT designer e implementadas em PyQt5.
-Foram utilizadas as bibliotecas Numpy para o auxílio dos cálculos matemáticos e a biblioteca Numba, para aceleração desses cálculos e uma melhor perfomance do código.
+PISA is a software prototype designed to porous image space analysis. It has been developed in Phyton 3.8 and used QT for screen designer implemented in PyQt5. Some Numpy libraries were used to support mathematical computations and the Numba library to speed up these computations and improve the code performance.
+
+Created and developed by Waldir Roque (RoqueWL), Edvaldo Melo (EFMelo) and Valci Júnior.
